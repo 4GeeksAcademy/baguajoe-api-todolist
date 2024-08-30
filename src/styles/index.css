@@ -1,12 +1,79 @@
 
-/* 
+/* change bg color. add margin top to bottom and change font.  use google fonts.  change the h1 color and font size.  play with input, play with no tasks() list-group-item give inline flex, play with x container*/
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+/* .container {
+    text-align: center;
+    background: rgb(137, 161, 211);
+    max-width: 540px;
+    box-shadow: ;
+}
 
-*/
+.task-input {
+    width: 80%;
+    text-align: center;
+}
+
+.x-container {
+    display: none;
+    cursor: pointer;
+    justify-content: center;
+
+}
+
+li:hover .x-container {
+    display: flex;
+    color: rgb(182, 49, 49);
+} */
+
+.container {
+    text-align: center;
+    background: rgb(137, 161, 211);
+    max-width: 540px;
+    padding: 20px;
+    perspective: 1000px; /* Adding perspective for the 3D effect */
+}
+
+.task-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Basic shadow for depth */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
+}
+
+.task-card:hover {
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+}
+
+.task-input {
+    width: 80%;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2); /* Inner shadow for depth */
+}
+
+.x-container {
+    display: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+li:hover .x-container {
+    display: flex;
+    color: rgb(182, 49, 49);
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for each task */
+    transition: transform 0.2s ease-in-out;
+}
